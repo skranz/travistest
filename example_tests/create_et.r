@@ -1,0 +1,5 @@
+library(testexamples)
+sources = testexamples::example.sources(ex.files = "example_tests/examples.r")
+library(travistest)
+et = create.example.tests(sources)
+saveRDS(et, "example_tests/et.Rds")
