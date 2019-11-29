@@ -14,20 +14,21 @@ env:
 r_build_args: --no-build-vignettes --no-manual
 r_check_args: --no-build-vignettes --no-manual --timings
 
-r_packages:
-  - covr
-
-
+#r_packages:
+#  - covr
 
 notifications:
   email:
-    on_success: always
-    on_failure: always
+    recipients:
+      - sebkranz@gmail.com
+    on_success: always # default: change
+    on_failure: always # default: always
+
 
 after_failure:
   - Rscript -e 'cat("\nUps, build failed...")'
 
 
 after_success:
-  - Rscript -e 'covr::codecov()'
+#  - Rscript -e 'covr::codecov()'
   - Rscript -e 'cat("\nHi, successful build!")'
