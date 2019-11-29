@@ -29,8 +29,8 @@ notifications:
 
 
 after_failure:
-  - Rscript example_tests/after.R
+  - Rscript tests/et/after.R
 
 
 after_success:
-  - Rscript example_tests/after.R
+  - Rscript tests/et/after.R

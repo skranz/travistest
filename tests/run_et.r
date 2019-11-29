@@ -1,6 +1,7 @@
 library(testexamples)
 
-et = readRDS("../example_tests/et.Rds")
+print(list.files())
+et = readRDS("et/et.Rds")
 
 library(travistest)
-run.example.tests(et,log.file = "../example_tests/log.Rmd",stat.file = "../example_tests/stats.csv")
+run.example.tests(et,log.file = "et/log.Rmd",stat.file = "et/stats.csv")

@@ -1,4 +1,6 @@
-stats = read.csv("example_tests/stats.csv")
+print(getwd())
+
+stats = read.csv("stats.csv")
 if (NROW(stats)>0) {
   cat("\nStats: ")
   print(stats)
@@ -7,5 +9,5 @@ if (NROW(stats)>0) {
 }
 
 cat("\n")
-txt = readLines("example_tests/log.Rmd")
+txt = readLines("log.Rmd")
 cat(paste0(txt, collapse="\n"))
