@@ -3,6 +3,9 @@ warnings_are_errors: false
 sudo: false
 cache: packages
 
+r_github_packages:
+  - skranz/testexamples
+
 # environment variables set for all builds
 env:
   global:
