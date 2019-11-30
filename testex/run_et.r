@@ -3,7 +3,7 @@ library(testexamples)
 
 et = readRDS("testex/et.Rds")
 
-library(travistest)
+#library(travistest)
 res = run.example.tests(et,log.file = "testex/log.Rmd",)
 
 if (res$num.issues>0) {
