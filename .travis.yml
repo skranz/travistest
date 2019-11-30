@@ -27,10 +27,11 @@ notifications:
     on_success: always # default: change
     on_failure: always # default: always
 
+script:
+  - Rscript testex/run_et.R
 
 after_failure:
-  - Rscript tests/et/after.R
-
+  - Rscript testex/after.R
 
 after_success:
-  - Rscript tests/et/after.R
+  - Rscript testex/after.R

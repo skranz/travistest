@@ -1,6 +1,6 @@
 # Comparison of examples
 
-2019-11-29 23:46:12 (new) vs
+2019-11-30 09:05:17 (new) vs
 2019-11-29 23:23:01 (old)
 
 ## example_tests/examples.r 
