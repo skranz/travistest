@@ -28,9 +28,10 @@ notifications:
     on_failure: always # default: always
 
 script:
-  - R CMD build --no-build-vignettes --no-manual .
-  - R CMD INSTALL travistest_0.1.tar.gz
+#  - R CMD build --no-build-vignettes --no-manual .
+#  - R CMD INSTALL travistest_0.1.tar.gz
 #  - R CMD check *tar.gz
+  - R CMD INSTALL --no-docs --no-html .
   - Rscript testex/run_et.r
 
 after_failure:
