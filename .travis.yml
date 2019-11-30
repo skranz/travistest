@@ -28,7 +28,7 @@ notifications:
     on_failure: always # default: always
 
 script:
-  - Rscript testex/run_et.R
+  - Rscript testex/run_et.r
 
 after_failure:
   - Rscript testex/after.R
