@@ -4,7 +4,7 @@ sudo: false
 cache: packages
 
 r_github_packages:
-  - skranz/testexamples
+  - skranz/testex
 
 # environment variables set for all builds
 env:
@@ -28,6 +28,8 @@ notifications:
     on_failure: always # default: always
 
 script:
+  - R CMD build --no-build-vignettes --no-manual .
+#  - R CMD check *tar.gz
   - Rscript testex/run_et.r
 
 after_failure:
